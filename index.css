@@ -1,15 +1,185 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+header
+{
+  text-align: center;
+}
+
+.menu
+  {
+    display: none;
+  }
+
+  .hamburger 
+  {
+    background-color: gray;
+    color: white;
+    text-align: end;
+  }
+
+  .product 
+  {
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(190, 190, 190);
+    text-align: center;
+  }
+
+  .social 
+  {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 90px; 
+  }
+
+  main
+  {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+/*Tablets*/
+/*
+FALTA
+-espacio entre logo y titulo
+*/
+@media(min-width:768px) and (max-width:1024px)
+{
+ 
+  header
+  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu
+  {
+    display: none;
+  }
+
+  .hamburger 
+  {
+    background-color: gray;
+    color: white;
+    text-align: end;
+  }
+
+  main 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 5px;
+    
   }
   
-  body {
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
+  .product 
+  {
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+    width: 700px;
+    text-align: center;
+  }
+
+  p 
+  {
+    text-align: justify;
+  }
+
+  footer 
+  {
+    margin-top: 20px;
+    border-top: 2px solid rgb(231, 231, 231);
+  }
+  .social 
+  {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 200px; 
   }
   
-  .logo > img {
-    width: 50px;
+}
+
+/*Pantalla grande*/
+/*FALTA
+--> Logo espacio
+-->Hacer iconos más grandes
+*/
+@media(min-width:1025px)
+{
+  
+  header
+  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu 
+  {
+    display: flex;
+    justify-content: flex-end;
+    background-color: gray;
+    color: white;
+    list-style: none;
+    height: 75px;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .hamburger 
+  {
+    display: none;
+  }
+
+  main 
+  {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
   }
   
-  
+  .product 
+  {
+    border: 2px;
+    border-style: solid;
+    border-color: rgb(231, 231, 231);
+    width: 450px;
+    text-align: center;
+  }
+
+  p 
+  {
+    text-align: left;
+  }
+
+  footer 
+  {
+    margin-top: 20px;
+    border-top: 2px solid rgb(231, 231, 231);
+  }
+  .social 
+  {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 500px;
+    
+  }
+
+}
