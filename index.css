@@ -51,10 +51,6 @@ header
     margin-right: 3px;
   }
 /*Tablets*/
-/*
-FALTA
--espacio entre logo y titulo
-*/
 @media(min-width:768px) and (max-width:1024px)
 {
  
@@ -113,13 +109,14 @@ FALTA
     gap: 200px; 
   }
   
+  .logo
+  {
+   margin-top: 20px;
+   padding-right: 100px;
+  }
 }
 
 /*Pantalla grande*/
-/*FALTA
---> Logo espacio
--->Hacer iconos más grandes
-*/
 @media(min-width:1025px)
 {
   
